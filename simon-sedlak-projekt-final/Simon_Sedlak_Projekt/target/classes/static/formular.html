@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Formulář osoby</title>
+
+    <style>
+        body {font-family: Arial; padding: 20px; max-width: 800px; margin: 0 auto}
+        label {display: block; margin-top: 10px}
+        input {width: 100%; padding: 8px; margin-top: 5px; box-sizing:border-box}
+        .adresy-row {display: flex; gap: 8px; margin-top: 8px}
+        .adresy-row input {flex: 1}
+        .adresy-row .small {width: 120px}
+    </style>
+
+</head>
+<body>
+
+<h1>Formulář osoby</h1>
+
+<form id="frm">
+    <label>Jméno:
+        <input type="text" id="jmeno" required>
+    </label>
+    <label>Příjmení:
+        <input type="text" id="prijmeni" required>
+    </label>
+    <label>Email:
+        <input type="email" id="email" required>
+    </label>
+    <label>Telefon:
+        <input type="text" id="telefon" required>
+    </label>
+
+    <h3>Adresy</h3>
+    <div id="adresyContainer"></div>
+    <button type="button" id="addAdres">Přidat adresu</button>
+
+    <div style="margin-top:16px">
+        <button type="submit">Uložit</button>
+        <button type="button" id="back">Zpět</button>
+    </div>
+</form>
+
+<script src="/formular.js"></script>
+
+</body>
+</html>
